@@ -31,7 +31,7 @@ def retrive_data(name):
     return retrive_df[['Name','Role','Facial Feature']]
 
 # Configure face analysis
-face_app = FaceAnalysis(name='buffalo_l',
+face_app = FaceAnalysis(name='buffalo_sc',
                         root='insightface_model',
                         providers=['CPUExecutionProvider'])
 face_app.prepare(ctx_id=0,det_size=(640,640),det_thresh=0.5)
